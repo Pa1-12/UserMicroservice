@@ -6,7 +6,7 @@ def get_connection():
             database="pythonpoc",
             user="postgres",
             password="root123",
-            host="127.0.0.1",
+            host="54.173.173.126",
             port=5432,
         )
     except:
