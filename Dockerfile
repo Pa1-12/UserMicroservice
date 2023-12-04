@@ -2,7 +2,7 @@ FROM python:3.9-slim-buster
 WORKDIR /app
 COPY ./requirements.txt /app
 RUN apt-get update \
-    && pip install psycopg2-binary
+    && pip install psycopg2-binary==2.9.1
 RUN pip install -r requirements.txt
 COPY . .
 EXPOSE 5000
